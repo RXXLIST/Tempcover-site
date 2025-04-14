@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Login | Tempcover</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #1A1C22; }
+    .header { background-color: #FFFFFF; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+    .btn-primary { background-color: #0057E7; color: #FFFFFF; font-weight: 600; transition: background-color 0.3s; }
+    .btn-primary:hover { background-color: #0044B3; }
+    .cookie-notice { background-color: #1A1C22; color: #FFFFFF; }
+    .trustpilot { background-color: #F5F7FA; }
+    .input-field { border: 1px solid #D1D5DB; transition: border-color 0.3s; }
+    .input-field:focus { border-color: #0057E7; outline: none; }
+    .member-benefits li::before { content: '✔'; color: #0057E7; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <!-- Header (from www.tempcover.com) -->
+  <header class="header fixed top-0 w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+      <a href="index.html" class="text-2xl font-bold text-[#0057E7]">TempCover</a>
+      <nav class="flex items-center space-x-4">
+        <a href="#" class="text-[#1A1C22] hover:text-[#0057E7] text-sm font-medium">Car</a>
+        <a href="#" class="text-[#1A1C22] hover:text-[#0057E7] text-sm font-medium">Van</a>
+        <a href="#" class="text-[#1A1C22] hover:text-[#0057E7] text-sm font-medium">Bike</a>
+        <a href="#" class="btn-primary px-4 py-2 rounded-md text-sm">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sign In Section -->
+  <section class="pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center">
+        <!-- Left: Login Form -->
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <h1 class="text-3xl font-bold text-[#1A1C22] mb-4">Sign in</h1>
+          <p class="text-[#1A1C22] mb-6">Get covered quicker and easier, access all your documents in one place, and more with your Tempcover account.</p>
+          <form id="loginForm" class="bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-[#1A1C22] mb-2">Email address</label>
+              <input type="email" id="email" placeholder="Enter your email" class="input-field w-full p-3 rounded-md text-[#1A1C22]" required>
+            </div>
+            <div class="mb-4">
+              <label for="password" class="block text-sm font-medium text-[#1A1C22] mb-2">Password</label>
+              <input type="password" id="password" placeholder="Enter your password" class="input-field w-full p-3 rounded-md text-[#1A1C22]" required>
+            </div>
+            <button type="submit" class="btn-primary w-full py-3 rounded-md">Login</button>
+            <p class="error hidden text-[#FF6666] text-center mt-4" id="errorMsg">Invalid email or password</p>
+          </form>
+          <p class="text-[#1A1C22] mt-4 text-sm">Not a Tempcover member? <a href="#" class="text-[#0057E7] underline">Sign up free today</a> for exclusive benefits!</p>
+          <ul class="member-benefits text-[#1A1C22] text-sm mt-4 space-y-2">
+            <li>Save money on your cover with exclusive members only discount</li>
+            <li>View & download your policies and view your policy history</li>
+            <li>Faster checkout</li>
+            <li>Fast quotes on your saved vehicles</li>
+          </ul>
+        </div>
+        <!-- Right: Image -->
+        <div class="w-full lg:w-1/2">
+          <img src="https://images.unsplash.com/photo-1666875751007-7b24c401d523?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Man with Car" class="w-full h-auto rounded-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Store Links -->
+  <section class="py-8 bg-[#E6F0FA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-[#1A1C22] mb-4">Get the updates</h2>
+      <div class="flex justify-center space-x-4">
+        <a href="https://www.apple.com/app-store/" target="_blank">
+          <img src="https://via.placeholder.com/150x50?text=App+Store" alt="App Store" class="h-10">
+        </a>
+        <a href="https://play.google.com/store" target="_blank">
+          <img src="https://via.placeholder.com/150x50?text=Play+Store" alt="Play Store" class="h-10">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trustpilot Mockup (from www.tempcover.com) -->
+  <section class="trustpilot py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-[#1A1C22] mb-6">What Our Customers Say</h2>
+      <div class="inline-flex items-center mb-6">
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2zM12 17.77l-.59-.31" /></svg>
+        <span class="text-[#1A1C22] font-medium">4.8 / 5 based on 41,367 reviews</span>
+      </div>
+      <p class="text-[#1A1C22] mb-6">“Quick and easy to get cover. Insured my car in minutes!” - Sarah, 2025</p>
+      <a href="#" class="btn-primary px-6 py-3 rounded-md">Read More Reviews</a>
+    </div>
+  </section>
+
+  <!-- Cookie Notice -->
+  <div class="cookie-notice p-4 text-center fixed bottom-0 w-full z-50">
+    <p class="text-sm mb-2">We use cookies to improve your experience. <a href="#" class="text-[#0057E7] underline">Manage Cookies</a></p>
+    <button class="btn-primary px-4 py-2 rounded-md">Accept All Cookies</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#1A1C22] py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#FFFFFF]">
+      <p>Tempcover Ltd, 2nd Floor Admiral House, Harlington Way, Fleet, Hampshire, GU51 4BB</p>
+      <p class="mt-2">Authorised & regulated by the Financial Conduct Authority No: 746985</p>
+      <p class="mt-2">Registered in England, Company No: 9923259</p>
+      <p class="mt-2">An RVU Company</p>
+      <p class="mt-2">Copyright © 2025 tempcover.com. All rights reserved</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="text-[#0057E7] hover:underline">Terms & Conditions</a>
+        <a href="#" class="text-[#0057E7] hover:underline">Privacy Policy</a>
+        <a href="#" class="text-[#0057E7] hover:underline">Contact Us</a>
+      </div>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="text-[#0057E7]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" /></svg></a>
+        <a href="#" class="text-[#0057E7]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" /></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      if (email === 'Nahimhassan@hotmail.co.uk' && password === '#Test123') {
+        window.location.href = 'account.html';
+      } else {
+        document.getElementById('errorMsg').classList.remove('hidden');
+      }
+    });
+    document.querySelector('.cookie-notice button').addEventListener('click', () => {
+      document.querySelector('.cookie-notice').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
