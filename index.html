@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TempCover - Temporary Vehicle Insurance</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #1A1C22; }
+    .header { background-color: #FFFFFF; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+    .hero { background: linear-gradient(180deg, #E6F0FA 0%, #FFFFFF 100%); }
+    .btn-primary { background-color: #0057E7; color: #FFFFFF; font-weight: 600; transition: background-color 0.3s; }
+    .btn-primary:hover { background-color: #0044B3; }
+    .trustpilot { background-color: #F5F7FA; }
+    .partner-logos img { filter: grayscale(100%); opacity: 0.7; transition: all 0.3s; }
+    .partner-logos img:hover { filter: grayscale(0%); opacity: 1; }
+    .cookie-notice { background-color: #1A1C22; color: #FFFFFF; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header fixed top-0 w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+      <a href="#" class="text-2xl font-bold text-[#0057E7]">TempCover</a>
+      <nav class="flex items-center space-x-4">
+        <a href="#" class="text-[#1A1C22] hover:text-[#0057E7] text-sm font-medium">Car</a>
+        <a href="#" class="text-[#1A1C22] hover:text-[#0057E7] text-sm font-medium">Van</a>
+        <a href="#" class="text-[#1A1C22] hover:text-[#0057E7] text-sm font-medium">Bike</a>
+        <a href="login.html" class="text-[#1A1C22] hover:text-[#0057E7] text-sm font-medium">Login</a>
+        <a href="#" class="btn-primary px-4 py-2 rounded-md text-sm">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-5xl font-bold text-[#1A1C22] mb-4">Temporary Vehicle Insurance</h1>
+      <p class="text-lg sm:text-xl text-[#1A1C22] mb-8">Fast, flexible cover from 1 hour to 28 days</p>
+      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <input type="text" placeholder="Enter vehicle reg (e.g., N44 HMX)" class="w-full p-3 border border-[#D1D5DB] rounded-md mb-4 text-[#1A1C22] focus:outline-none focus:ring-2 focus:ring-[#0057E7]">
+        <a href="#" class="btn-primary w-full block text-center py-3 rounded-md">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vehicle Options -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#1A1C22] mb-12">Choose Your Cover</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Car" class="h-40 w-full object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-semibold text-[#0057E7] mb-2">Temporary Car Insurance</h3>
+          <p class="text-[#1A1C22] mb-4">Cover for drivers 17-78, from 1 hour to 28 days.</p>
+          <a href="#" class="btn-primary px-4 py-2 rounded-md">Get a Quote</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1601924994987-7b56d086f648?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Van" class="h-40 w-full object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-semibold text-[#0057E7] mb-2">Temporary Van Insurance</h3>
+          <p class="text-[#1A1C22] mb-4">For tradesmen or borrowers, 1 hour to 28 days.</p>
+          <a href="#" class="btn-primary px-4 py-2 rounded-md">Get a Quote</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1618843473806-78f6e5a5b3c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bike" class="h-40 w-full object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-semibold text-[#0057E7] mb-2">Temporary Bike Insurance</h3>
+          <p class="text-[#1A1C22] mb-4">Up to 7 days for occasional riders.</p>
+          <a href="#" class="btn-primary px-4 py-2 rounded-md">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Tempcover -->
+  <section class="py-16 bg-[#E6F0FA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#1A1C22] mb-12">Why Choose Tempcover?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <svg class="mx-auto h-12 w-12 text-[#0057E7] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          <h3 class="text-lg font-semibold text-[#1A1C22] mb-2">Flexible Duration</h3>
+          <p class="text-[#1A1C22]">From 1 hour to 28 days, pick what you need.</p>
+        </div>
+        <div class="text-center">
+          <svg class="mx-auto h-12 w-12 text-[#0057E7] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          <h3 class="text-lg font-semibold text-[#1A1C22] mb-2">Comprehensive Cover</h3>
+          <p class="text-[#1A1C22]">Fully protected as standard.</p>
+        </div>
+        <div class="text-center">
+          <svg class="mx-auto h-12 w-12 text-[#0057E7] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-1.1.9-2 2-2s2 .9 2 2-2 4-2 4m0 0c-1.1 0-2-.9-2-2s.9-2 2-2m0 0c1.1 0 2 .9 2 2" /></svg>
+          <h3 class="text-lg font-semibold text-[#1A1C22] mb-2">No NCD Impact</h3>
+          <p class="text-[#1A1C22]">Claims won’t affect your no-claims bonus.</p>
+        </div>
+        <div class="text-center">
+          <svg class="mx-auto h-12 w-12 text-[#0057E7] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          <h3 class="text-lg font-semibold text-[#1A1C22] mb-2">Instant Cover</h3>
+          <p class="text-[#1A1C22]">Insured in minutes, 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trustpilot Reviews -->
+  <section class="trustpilot py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-[#1A1C22] mb-6">What Our Customers Say</h2>
+      <div class="inline-flex items-center mb-6">
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+        <svg class="h-6 w-6 text-[#00B67A] mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2zM12 17.77l-.59-.31" /></svg>
+        <span class="text-[#1A1C22] font-medium">4.8 / 5 based on 41,367 reviews</span>
+      </div>
+      <p class="text-[#1A1C22] mb-6">“Quick and easy to get cover. Insured my car in minutes!” - Sarah, 2025</p>
+      <a href="#" class="btn-primary px-6 py-3 rounded-md">Read More Reviews</a>
+    </div>
+  </section>
+
+  <!-- Partner Logos -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#1A1C22] mb-12">Trusted by Leading Brands</h2>
+      <div class="partner-logos grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        <img src="https://via.placeholder.com/150x50?text=AA" alt="AA" class="h-10 object-contain">
+        <img src="https://via.placeholder.com/150x50?text=Confused.com" alt="Confused.com" class="h-10 object-contain">
+        <img src="https://via.placeholder.com/150x50?text=Motorpoint" alt="Motorpoint" class="h-10 object-contain">
+        <img src="https://via.placeholder.com/150x50?text=Carbase" alt="Carbase" class="h-10 object-contain">
+        <img src="https://via.placeholder.com/150x50?text=Uswitch" alt="Uswitch" class="h-10 object-contain">
+      </div>
+    </div>
+  </section>
+
+  <!-- Cookie Notice -->
+  <div class="cookie-notice p-4 text-center fixed bottom-0 w-full z-50">
+    <p class="text-sm mb-2">We use cookies to improve your experience. <a href="#" class="text-[#0057E7] underline">Manage Cookies</a></p>
+    <button class="btn-primary px-4 py-2 rounded-md">Accept All Cookies</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#1A1C22] py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#FFFFFF]">
+      <p>TempCover Ltd, 2nd Floor Admiral House, Harlington Way, Fleet, Hampshire, GU51 4BB</p>
+      <p class="mt-2">Authorised & regulated by the Financial Conduct Authority</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="text-[#0057E7] hover:underline">Terms & Conditions</a>
+        <a href="#" class="text-[#0057E7] hover:underline">Privacy Policy</a>
+        <a href="#" class="text-[#0057E7] hover:underline">Contact Us</a>
+      </div>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="text-[#0057E7]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" /></svg></a>
+        <a href="#" class="text-[#0057E7]"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" /></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.cookie-notice button').addEventListener('click', () => {
+      document.querySelector('.cookie-notice').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
